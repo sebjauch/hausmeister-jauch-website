@@ -1,6 +1,6 @@
 # hausmeister-jauch.de
 
-Website des Hausmeisterservice Sebastian Jauch. Gebaut mit [Astro](https://astro.build) und React, gehostet auf Cloudflare Pages.
+Website des Hausmeisterservice Sebastian Jauch. Gebaut mit [Astro](https://astro.build) und React, gehostet auf Cloudflare Workers.
 
 ## Lokal starten
 
@@ -16,9 +16,10 @@ npm run dev
 - `src/components/` – Bausteine wie Navigation, Formulare, Galerie
 - `src/data/site.js` – Firmendaten, Google-Analytics-ID, strukturierte Daten
 - `public/images/` – Bilder
-- `functions/api/contact.js` – Kontakt- und Bewerbungsformular (Cloudflare-Funktion, Versand über Resend)
+- `functions/api/contact.js` – Kontakt- und Bewerbungsformular (Versand über Resend)
+- `worker/index.js` + `wrangler.jsonc` – Cloudflare-Worker: leitet `/api/contact` an das Formular weiter, alles andere kommt aus `dist`
 
-## Cloudflare Pages
+## Cloudflare
 
-- Framework: Astro, Build-Befehl `npm run build`, Ausgabeordner `dist`
-- Umgebungsvariable `RESEND_API_KEY` als Secret hinterlegen
+- Build-Befehl `npm run build`, Deploy-Befehl `npx wrangler deploy`
+- Secret `RESEND_API_KEY` unter Worker → Settings → Variables and Secrets hinterlegen
