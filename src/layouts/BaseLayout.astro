@@ -1,0 +1,95 @@
+---
+import "@fontsource/space-grotesk/400.css";
+import "@fontsource/space-grotesk/500.css";
+import "@fontsource/space-grotesk/600.css";
+import "@fontsource/space-grotesk/700.css";
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+import "@/styles/global.css";
+import CookieBanner from "@/components/home/CookieBanner";
+import {
+  SITE_URL,
+  SITE_NAME,
+  DEFAULT_TITLE,
+  DEFAULT_DESCRIPTION,
+  OG_IMAGE,
+  FAVICON,
+  GA_ID,
+  LOCAL_BUSINESS,
+} from "@/data/site";
+
+const { title, description = DEFAULT_DESCRIPTION, noindex = false } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
+const path = Astro.url.pathname.replace(/\.html$/, "").replace(/\/index$/, "/") || "/";
+const canonical = `${SITE_URL}${path}`;
+const ogImage = `${SITE_URL}${OG_IMAGE}`;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href={FAVICON} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
+    <link rel="canonical" href={canonical} />
+    <meta name="google-site-verification" content="O7cdKQxDtVAnExo9ug1Y4348F1Nit3QG5vodR6NDLKo" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(LOCAL_BUSINESS)} />
+
+    <!-- Google Analytics lädt erst, wenn im Cookie-Banner "Statistik" erlaubt wurde. -->
+    <script is:inline define:vars={{ GA_ID }}>
+      (function () {
+        var KEY = "sj_cookie_consent";
+        var loaded = false;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        function apply(consent) {
+          var allowed = !!(consent && consent.statistik);
+          if (!allowed) {
+            if (loaded) window.gtag("consent", "update", { analytics_storage: "denied" });
+            window["ga-disable-" + GA_ID] = true;
+            return;
+          }
+          window["ga-disable-" + GA_ID] = false;
+          if (loaded) {
+            window.gtag("consent", "update", { analytics_storage: "granted" });
+            return;
+          }
+          loaded = true;
+          window.gtag("consent", "default", { analytics_storage: "granted", ad_storage: "denied" });
+          window.gtag("js", new Date());
+          window.gtag("config", GA_ID, { anonymize_ip: true });
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+          document.head.appendChild(s);
+        }
+        try { apply(JSON.parse(localStorage.getItem(KEY) || "null")); } catch (e) {}
+        window.addEventListener("sj-consent-change", function (e) { apply(e.detail); });
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+    <CookieBanner client:idle />
+  </body>
+</html>
