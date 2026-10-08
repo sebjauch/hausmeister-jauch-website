@@ -31,6 +31,7 @@ export default function ContactSection() {
     message: "",
   });
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
+  const [errorDetail, setErrorDetail] = useState("");
   const [photos, setPhotos] = useState([]);
 
   const resetForm = () => {
@@ -76,6 +77,7 @@ export default function ContactSection() {
       setStatus("success");
       resetForm();
     } catch (err) {
+      setErrorDetail(err?.message || "");
       setStatus("error");
     }
   };
@@ -268,11 +270,16 @@ export default function ContactSection() {
               {status === "error" && (
                 <div className="flex items-start gap-3 p-4 bg-destructive/10 border border-destructive/30">
                   <AlertCircle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
-                  <p className="text-sm text-destructive leading-relaxed">
-                    Die Anfrage konnte leider nicht versendet werden. Bitte
-                    versuchen Sie es später erneut oder schreiben Sie direkt an
-                    info@hausmeister-jauch.de.
-                  </p>
+                  <div>
+                    <p className="text-sm text-destructive leading-relaxed">
+                      Die Anfrage konnte leider nicht versendet werden. Bitte
+                      versuchen Sie es später erneut oder schreiben Sie direkt an
+                      info@hausmeister-jauch.de.
+                    </p>
+                    {errorDetail && (
+                      <p className="text-xs text-destructive/70 mt-1">Technischer Hinweis: {errorDetail}</p>
+                    )}
+                  </div>
                 </div>
               )}
 

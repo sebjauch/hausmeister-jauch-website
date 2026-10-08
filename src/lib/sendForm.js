@@ -33,7 +33,7 @@ export async function sendForm(fields, files = []) {
   const response = await fetch("/api/contact", { method: "POST", body });
   const result = await response.json().catch(() => ({}));
   if (!response.ok || result.success === false) {
-    throw new Error(result.error || "Versand fehlgeschlagen");
+    throw new Error(`${result.error || "Versand fehlgeschlagen"} (Status ${response.status})`);
   }
   return result;
 }
