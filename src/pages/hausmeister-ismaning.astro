@@ -1,0 +1,13 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Ismaning, { FAQS } from "@/views/orte/Ismaning";
+import { faqSchema } from "@/components/location/LocationPage";
+---
+
+<BaseLayout
+  title="Hausmeisterservice in Ismaning"
+  description="Hausmeisterservice in Ismaning: Gartenpflege, Heckenschnitt, Objektbetreuung und Reparaturen. Sitz in Ismaning, kurze Wege, fester Ansprechpartner. Jetzt anfragen: 0174 640 31 78"
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema(FAQS))} />
+  <Ismaning client:load />
+</BaseLayout>
