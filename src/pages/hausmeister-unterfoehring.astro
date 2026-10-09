@@ -1,0 +1,13 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Unterfoehring, { FAQS } from "@/views/orte/Unterfoehring";
+import { faqSchema } from "@/components/location/LocationPage";
+---
+
+<BaseLayout
+  title="Hausmeisterservice in Unterföhring"
+  description="Hausmeisterservice in Unterföhring: Gartenpflege, Heckenschnitt, Pflege von Außenanlagen und Reparaturen. Aus dem Nachbarort Ismaning schnell vor Ort. Anfragen: 0174 640 31 78"
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema(FAQS))} />
+  <Unterfoehring client:load />
+</BaseLayout>

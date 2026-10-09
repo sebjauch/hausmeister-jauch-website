@@ -29,10 +29,9 @@ export const LOCAL_BUSINESS = {
     addressLocality: "Ismaning",
     addressCountry: "DE",
   },
-  areaServed: [
-    { "@type": "City", name: "Ismaning" },
-    { "@type": "City", name: "München" },
-  ],
+  areaServed: ["Ismaning", "Unterföhring", "Garching bei München", "Aschheim", "Kirchheim bei München", "Feldkirchen", "München"].map(
+    (name) => ({ "@type": "City", name })
+  ),
   hasMap: GOOGLE_PROFILE,
   sameAs: [
     GOOGLE_PROFILE,

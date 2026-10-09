@@ -179,6 +179,12 @@ export default function Footer() {
                 </p>
                 <a href="tel:+491746403178" className="block hover:text-background transition-colors">0174 640 31 78</a>
                 <a href="mailto:info@hausmeister-jauch.de" className="block hover:text-background transition-colors break-all">info@hausmeister-jauch.de</a>
+                <p className="pt-2">
+                  Hausmeister in{" "}
+                  <a href="/hausmeister-ismaning" className="underline underline-offset-4 hover:text-background transition-colors">Ismaning</a>
+                  {" · "}
+                  <a href="/hausmeister-unterfoehring" className="underline underline-offset-4 hover:text-background transition-colors">Unterföhring</a>
+                </p>
               </div>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
