@@ -9,7 +9,7 @@ export const WhatsAppIcon = ({ className }) => (
 import DatenschutzModal from "@/components/home/DatenschutzModal";
 import { CookieSettingsModal } from "@/components/home/CookieBanner";
 import { saveConsent } from "@/lib/consent";
-import { GOOGLE_PROFILE } from "@/data/site";
+import { GOOGLE_PROFILE, GOOGLE_REVIEW } from "@/data/site";
 
 
 const LOGO_URL = "/images/logo-klein.webp";
@@ -227,6 +227,14 @@ export default function Footer() {
               >
                 <Star className="w-4 h-4 fill-accent text-accent" />
                 Bewertungen auf Google ansehen
+              </a>
+              <a
+                href={GOOGLE_REVIEW}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 block w-fit border border-accent/60 text-accent px-4 py-2 font-heading font-semibold text-xs tracking-wider uppercase hover:bg-accent hover:text-foreground transition-colors"
+              >
+                Bewertung schreiben
               </a>
             </div>
           </div>
