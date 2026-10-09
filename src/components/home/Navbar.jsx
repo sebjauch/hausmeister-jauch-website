@@ -20,9 +20,6 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navigate = (href) => {
-    window.location.href = href;
-  };
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 40);
@@ -30,25 +27,22 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  const scrollToSection = (href) => {
+  // Echte Links (für Google); auf der Startseite wird weich zum Abschnitt gescrollt.
+  const linkHref = (href) => (href.startsWith("/") ? href : `/${href}`);
+
+  const scrollToSection = (e, href) => {
     setMobileOpen(false);
-    if (href.startsWith("/")) {
-      navigate(href);
-      return;
-    }
+    if (href.startsWith("/")) return;
     const el = document.querySelector(href);
     if (el) {
+      e.preventDefault();
       el.scrollIntoView({ behavior: "smooth" });
-    } else {
-      // Auf Unterseiten: zur Startseite navigieren und dort zum Abschnitt springen
-      navigate(`/${href}`);
     }
   };
 
-  const goHome = () => {
-    if (window.location.pathname !== "/") {
-      navigate("/");
-    } else {
+  const goHome = (e) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
@@ -65,7 +59,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16 lg:h-20">
         {/* Left logo / Home button */}
         <div className="flex-1 flex items-center">
-          <button
+          <a
+            href="/"
             onClick={goHome}
             className="shrink-0"
             aria-label="Zur Startseite">
@@ -77,7 +72,7 @@ export default function Navbar() {
               height={48}
               className="h-10 lg:h-12 w-auto transition-all duration-500"
             />
-          </button>
+          </a>
         </div>
 
         {/* Mobile toggle (right on mobile) */}
@@ -91,13 +86,14 @@ export default function Navbar() {
         {/* Right links */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8 xl:gap-10 flex-1 justify-end">
           {navLinks.map((link) =>
-          <button
+          <a
             key={link.href}
-            onClick={() => scrollToSection(link.href)}
+            href={linkHref(link.href)}
+            onClick={(e) => scrollToSection(e, link.href)}
             className="font-mono text-xs tracking-widest uppercase whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors duration-300">
             
               {link.label}
-            </button>
+            </a>
           )}
           <a
             href={PHONE_HREF}
@@ -105,12 +101,13 @@ export default function Navbar() {
             <Phone className="w-4 h-4" />
             {PHONE_LABEL}
           </a>
-          <button
-            onClick={() => scrollToSection("#kontakt")}
+          <a
+            href="/#kontakt"
+            onClick={(e) => scrollToSection(e, "#kontakt")}
             className="whitespace-nowrap bg-primary text-primary-foreground px-5 py-2.5 text-xs font-heading font-semibold tracking-wider uppercase hover:bg-primary/90 transition-colors duration-300">
             
             Anfrage stellen
-          </button>
+          </a>
         </div>
       </div>
 
@@ -125,20 +122,22 @@ export default function Navbar() {
           
             <div className="px-6 py-6 flex flex-col gap-5">
               {navLinks.map((link) =>
-            <button
+            <a
               key={link.href}
-              onClick={() => scrollToSection(link.href)}
+              href={linkHref(link.href)}
+              onClick={(e) => scrollToSection(e, link.href)}
               className="font-mono text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground text-left transition-colors">
               
                   {link.label}
-                </button>
+                </a>
             )}
-              <button
-              onClick={() => scrollToSection("#kontakt")}
-              className="bg-primary text-primary-foreground px-5 py-3 text-sm font-heading font-semibold tracking-wider uppercase mt-2">
+              <a
+              href="/#kontakt"
+              onClick={(e) => scrollToSection(e, "#kontakt")}
+              className="text-center bg-primary text-primary-foreground px-5 py-3 text-sm font-heading font-semibold tracking-wider uppercase mt-2">
               
                 Anfrage stellen
-              </button>
+              </a>
             </div>
           </motion.div>
         }

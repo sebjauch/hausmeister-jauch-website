@@ -143,17 +143,17 @@ export default function Footer() {
                 LEISTUNGEN
               </span>
               <ul className="space-y-3 text-background/70 text-sm">
-                <li>Hecke schneiden</li>
-                <li>Rasen mähen</li>
-                <li>Unkrautentfernung</li>
-                <li>Bepflanzungen</li>
-                <li>Laub entfernen</li>
-                <li>Terrassenreinigung</li>
-                <li>Regenrinnen reinigen</li>
-                <li>Leuchtmittelaustausch</li>
-                <li>Objektkontrolle</li>
-                <li>Holzarbeiten & Außenbau</li>
-                <li>Kleinere Reparaturen</li>
+                <li><a href="/leistungen/gartenarbeiten" className="hover:text-background transition-colors">Hecke schneiden</a></li>
+                <li><a href="/leistungen/gartenarbeiten" className="hover:text-background transition-colors">Rasen mähen</a></li>
+                <li><a href="/leistungen/gartenarbeiten" className="hover:text-background transition-colors">Unkrautentfernung</a></li>
+                <li><a href="/leistungen/gartenarbeiten" className="hover:text-background transition-colors">Bepflanzungen</a></li>
+                <li><a href="/leistungen/gartenarbeiten" className="hover:text-background transition-colors">Laub entfernen</a></li>
+                <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Terrassenreinigung</a></li>
+                <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Regenrinnen reinigen</a></li>
+                <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Leuchtmittelaustausch</a></li>
+                <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Objektkontrolle</a></li>
+                <li><a href="/leistungen/holzarbeiten-aussenbau" className="hover:text-background transition-colors">Holzarbeiten & Außenbau</a></li>
+                <li><a href="/leistungen/reparaturen-montage" className="hover:text-background transition-colors">Kleinere Reparaturen</a></li>
               </ul>
             </div>
 
@@ -246,18 +246,20 @@ export default function Footer() {
                 © {new Date().getFullYear()} HAUSMEISTERSERVICE SEBASTIAN JAUCH
               </p>
               <div className="flex items-center gap-6">
-                <button
-                  onClick={() => setShowImpressum(true)}
+                <a
+                  href="/impressum"
+                  onClick={(e) => { e.preventDefault(); setShowImpressum(true); }}
                   className="font-mono text-xs text-background/40 hover:text-background/70 transition-colors underline underline-offset-4"
                 >
                   IMPRESSUM
-                </button>
-                <button
-                  onClick={() => setShowDatenschutz(true)}
+                </a>
+                <a
+                  href="/datenschutz"
+                  onClick={(e) => { e.preventDefault(); setShowDatenschutz(true); }}
                   className="font-mono text-xs text-background/40 hover:text-background/70 transition-colors underline underline-offset-4"
                 >
                   DATENSCHUTZ
-                </button>
+                </a>
                 <button
                   onClick={() => setShowCookieSettings(true)}
                   className="font-mono text-xs text-background/40 hover:text-background/70 transition-colors underline underline-offset-4"

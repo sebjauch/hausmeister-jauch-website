@@ -5,14 +5,12 @@ const LOGO_URL = "/images/logo.webp";
 const HERO_IMAGE = "/images/24b54621a_20240629_102308.webp";
 
 export default function HeroSection() {
-  const scrollToServices = () => {
-    const el = document.querySelector("#leistungen");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToContact = () => {
-    const el = document.querySelector("#kontakt");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+  const scrollTo = (e, id) => {
+    const el = document.querySelector(id);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -51,18 +49,20 @@ export default function HeroSection() {
 
         <div className="flex flex-col sm:flex-row gap-4">
           
-          <button
-            onClick={scrollToContact}
-            className="bg-primary text-primary-foreground px-8 py-4 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-primary/90 transition-colors duration-300">
+          <a
+            href="#kontakt"
+            onClick={(e) => scrollTo(e, "#kontakt")}
+            className="text-center bg-primary text-primary-foreground px-8 py-4 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-primary/90 transition-colors duration-300">
             
             Kostenlose Anfrage
-          </button>
-          <button
-            onClick={scrollToServices}
-            className="border border-foreground/20 text-foreground px-8 py-4 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-foreground/5 transition-colors duration-300">
+          </a>
+          <a
+            href="#leistungen"
+            onClick={(e) => scrollTo(e, "#leistungen")}
+            className="text-center border border-foreground/20 text-foreground px-8 py-4 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-foreground/5 transition-colors duration-300">
             
             Leistungen ansehen
-          </button>
+          </a>
         </div>
 
         {/* Scroll indicator */}

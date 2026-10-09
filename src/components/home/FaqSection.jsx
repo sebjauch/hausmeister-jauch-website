@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-const FAQS = [
+export const FAQS = [
   {
     question: "Was bietet der Hausmeisterservice Sebastian Jauch an?",
     answer:
@@ -102,21 +101,18 @@ function FaqItem({ item, isOpen, onToggle }) {
           }`}
         />
       </button>
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
-            <p className="pb-5 text-sm lg:text-base text-muted-foreground leading-relaxed">
-              {item.answer}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Antwort steht immer im HTML (für Google), wird nur optisch zugeklappt */}
+      <div
+        className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <p className="pb-5 text-sm lg:text-base text-muted-foreground leading-relaxed">
+            {item.answer}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

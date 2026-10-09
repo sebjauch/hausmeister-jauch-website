@@ -55,6 +55,7 @@ const ogImage = `${SITE_URL}${OG_IMAGE}`;
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" set:html={JSON.stringify(LOCAL_BUSINESS)} />
+    <slot name="head" />
 
     <!-- Google Analytics lädt erst, wenn im Cookie-Banner "Statistik" erlaubt wurde. -->
     <script is:inline define:vars={{ GA_ID }}>
