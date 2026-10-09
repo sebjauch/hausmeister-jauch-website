@@ -117,7 +117,7 @@ export default function CookieBanner() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.35 }}
-            className="fixed bottom-0 inset-x-0 z-[70] px-4 pb-4 sm:px-6 sm:pb-6">
+            className="fixed bottom-14 md:bottom-0 inset-x-0 z-[70] px-4 pb-4 sm:px-6 sm:pb-6">
             <div className="max-w-5xl mx-auto bg-foreground text-background shadow-2xl border-t-2 border-accent">
               <div className="p-5 sm:p-7">
                 <div className="flex flex-col lg:flex-row items-start gap-5">

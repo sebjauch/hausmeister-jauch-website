@@ -4,67 +4,67 @@ import { X } from "lucide-react";
 
 const photos = [
 {
-  src: "/images/9be22a100_20230617_104423.jpg",
+  src: "/images/9be22a100_20230617_104423.webp",
   label: "Baumschnitt & Grünpflege",
   span: "col-span-2 row-span-2"
 },
 {
-  src: "/images/2e81922dd_20230617_114119.jpg",
+  src: "/images/2e81922dd_20230617_114119.webp",
   label: "Grundstückspflege",
   span: "col-span-1 row-span-1"
 },
 {
-  src: "/images/308d22519_20260601_113140.jpg",
+  src: "/images/308d22519_20260601_113140.webp",
   label: "Regenrinnen reinigen",
   span: "col-span-1 row-span-2"
 },
 {
-  src: "/images/24b54621a_20240629_102308.jpg",
+  src: "/images/24b54621a_20240629_102308.webp",
   label: "Heckenschnitt",
   span: "col-span-1 row-span-1"
 },
 {
-  src: "/images/1701a522e_20190916_154912.jpg",
+  src: "/images/1701a522e_20190916_154912.webp",
   label: "Tor- & Zaunreparatur",
   span: "col-span-1 row-span-1"
 },
 {
-  src: "/images/b4ab21fd1_20190409_151333.jpg",
+  src: "/images/b4ab21fd1_20190409_151333.webp",
   label: "Zaunerneuerung",
   span: "col-span-1 row-span-1"
 },
 {
-  src: "/images/2a9716192_generated_image.png",
+  src: "/images/2a9716192_generated_image.webp",
   label: "Reparaturarbeiten",
   span: "col-span-2 row-span-1"
 },
 {
-  src: "/images/69ad9eceb_20250129_114341.jpg",
+  src: "/images/69ad9eceb_20250129_114341.webp",
   label: "Küchenmontage",
   span: "col-span-1 row-span-1"
 },
 {
-  src: "/images/462b70b12_20230628_172049.jpg",
+  src: "/images/462b70b12_20230628_172049.webp",
   label: "Terrassenbau",
   span: "col-span-1 row-span-1"
 },
 {
-  src: "/images/b6fce7dbc_20230914_155547.jpg",
+  src: "/images/b6fce7dbc_20230914_155547.webp",
   label: "Balkonverkleidung",
   span: "col-span-1 row-span-1"
 },
 {
-  src: "/images/9325ea156_20230226_085500.jpg",
+  src: "/images/9325ea156_20230226_085500.webp",
   label: "Dachbodenausbau",
   span: "col-span-1 row-span-2"
 },
 {
-  src: "/images/12902cdf5_20211217_191249.jpg",
+  src: "/images/12902cdf5_20211217_191249.webp",
   label: "Fußbodenverlegung",
   span: "col-span-2 row-span-1"
 },
 {
-  src: "/images/73d716b30_20230618_072631.jpg",
+  src: "/images/73d716b30_20230618_072631.webp",
   label: "Maßarbeit — Medienelement",
   span: "col-span-1 row-span-1"
 }];
@@ -104,6 +104,8 @@ export default function GallerySection() {
             onClick={() => setLightbox(photo)}>
             
               <img
+              loading="lazy"
+              decoding="async"
               src={photo.src}
               alt={photo.label}
               className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${photo.contain ? "object-contain" : "object-cover"}`} />
@@ -147,6 +149,8 @@ export default function GallerySection() {
           onClick={(e) => e.stopPropagation()}>
           
             <img
+              loading="lazy"
+              decoding="async"
             src={lightbox.src}
             alt={lightbox.label}
             className="w-full h-full object-contain" />

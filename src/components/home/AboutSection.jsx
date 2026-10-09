@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const IMAGE_URL = "/images/bd6105059_20220922_164459.jpg";
+const IMAGE_URL = "/images/bd6105059_20220922_164459.webp";
 
 export default function AboutSection() {
   return (
@@ -15,6 +15,8 @@ export default function AboutSection() {
           className="relative"
         >
           <img
+              loading="lazy"
+              decoding="async"
             src={IMAGE_URL}
             alt="Sebastian Jauch bei der Arbeit"
             className="w-full h-[420px] lg:h-[520px] object-cover"

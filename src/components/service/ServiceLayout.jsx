@@ -1,10 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { ArrowLeft, Phone, Mail, MapPin } from "lucide-react";
 import Navbar from "@/components/home/Navbar";
 import Footer from "@/components/home/Footer";
-
-const LOGO_URL = "/images/744b80371_ChatGPTImage10Juni202615_54_43.png";
 
 /**
  * Gemeinsames Layout für alle Leistungs-Unterseiten.
@@ -45,11 +42,7 @@ export default function ServiceLayout({
           </a>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
+            <div>
               <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground block mb-3">
                 {eyebrow}
               </span>
@@ -59,20 +52,16 @@ export default function ServiceLayout({
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
                 {lead}
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.96 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-              className="relative h-72 lg:h-96 overflow-hidden"
-            >
+            <div className="relative h-72 lg:h-96 overflow-hidden">
               <img
                 src={heroImage}
                 alt={title}
+                fetchpriority="high"
                 className={`w-full h-full ${heroContain ? "object-contain" : "object-cover"}`}
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

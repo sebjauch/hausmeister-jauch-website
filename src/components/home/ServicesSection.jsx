@@ -9,7 +9,7 @@ const services = [
   icon: Leaf,
   description: "Ihr Garten in besten Händen — vom Frühjahr bis in den Herbst.",
   items: ["Hecke schneiden", "Rasen mähen", "Grünschnitt & Entsorgung", "Baumschnitt", "Unkrautentfernung", "Bepflanzungen", "Laub entfernen"],
-  image: "/images/6a9b14516_schulhaus.jpeg",
+  image: "/images/6a9b14516_schulhaus.webp",
   contain: true,
   link: "/leistungen/gartenarbeiten"
 },
@@ -19,7 +19,7 @@ const services = [
   icon: Droplets,
   description: "Rund ums Haus im Blick — professionell und zuverlässig.",
   items: ["Terrassenreinigung", "Regenrinnen leeren und reinigen", "Wege & Einfahrten", "Kehrarbeiten", "Leuchtmittelaustausch", "Objektkontrolle", "Drohnenservice"],
-  image: "/images/308d22519_20260601_113140.jpg",
+  image: "/images/308d22519_20260601_113140.webp",
   link: "/leistungen/aussenbereich-pflege"
 },
 {
@@ -28,7 +28,7 @@ const services = [
   icon: Wrench,
   description: "Kleine Schäden, große Wirkung — schnell und zuverlässig behoben.",
   items: ["Kleinere Reparaturen", "Instandhaltungsmaßnahmen", "Montagearbeiten", "Sichtschutz"],
-  image: "/images/7c00859b0_20240917_160555.jpg",
+  image: "/images/7c00859b0_20240917_160555.webp",
   link: "/leistungen/reparaturen-montage"
 },
 {
@@ -37,7 +37,7 @@ const services = [
   icon: Hammer,
   description: "Individuelle Lösungen aus Holz für Haus und Garten. Ob Terrassen, Zäune, Sichtschutzelemente oder Balkonverkleidungen – wir fertigen hochwertige Holzarbeiten nach Ihren Wünschen.",
   items: ["Terrassen aus Holz", "Zäune & Sichtschutz", "Balkonverkleidungen", "Maßarbeit nach Wunsch"],
-  image: "/images/e5a6cf3b0_20210818_134337.jpg",
+  image: "/images/e5a6cf3b0_20210818_134337.webp",
   link: "/leistungen/holzarbeiten-aussenbau"
 }];
 
@@ -81,6 +81,8 @@ export default function ServicesSection() {
                 {/* Image */}
                 <div className="relative h-52 overflow-hidden">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={service.image}
                     alt={service.title}
                     className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${service.contain ? "object-contain" : "object-cover"}`} />

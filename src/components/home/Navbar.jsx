@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, ArrowUp } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { WhatsAppIcon } from "@/components/home/Footer";
 
-const LOGO_URL = "/images/6bf64c176_websiteicon.png";
+const PHONE_HREF = "tel:+491746403178";
+const PHONE_LABEL = "0174 640 31 78";
+const WHATSAPP_HREF = "https://wa.me/491746403178";
+
+const LOGO_URL = "/images/icon.webp";
 
 const navLinks = [
 { label: "Über uns", href: "#ueber-mich" },
@@ -49,6 +54,7 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       scrolled ?
@@ -67,6 +73,8 @@ export default function Navbar() {
             <img
               src={LOGO_URL}
               alt="SJ Hausmeisterservice Logo"
+              width={48}
+              height={48}
               className="h-10 lg:h-12 w-auto transition-all duration-500"
             />
           </button>
@@ -81,19 +89,25 @@ export default function Navbar() {
         </button>
 
         {/* Right links */}
-        <div className="hidden md:flex items-center gap-10 flex-1 justify-end">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8 xl:gap-10 flex-1 justify-end">
           {navLinks.map((link) =>
           <button
             key={link.href}
             onClick={() => scrollToSection(link.href)}
-            className="font-mono text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-300">
+            className="font-mono text-xs tracking-widest uppercase whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors duration-300">
             
               {link.label}
             </button>
           )}
+          <a
+            href={PHONE_HREF}
+            className="hidden lg:inline-flex items-center gap-2 font-heading font-semibold text-sm text-primary hover:text-primary/80 transition-colors whitespace-nowrap">
+            <Phone className="w-4 h-4" />
+            {PHONE_LABEL}
+          </a>
           <button
             onClick={() => scrollToSection("#kontakt")}
-            className="bg-primary text-primary-foreground px-5 py-2.5 text-xs font-heading font-semibold tracking-wider uppercase hover:bg-primary/90 transition-colors duration-300">
+            className="whitespace-nowrap bg-primary text-primary-foreground px-5 py-2.5 text-xs font-heading font-semibold tracking-wider uppercase hover:bg-primary/90 transition-colors duration-300">
             
             Anfrage stellen
           </button>
@@ -129,6 +143,25 @@ export default function Navbar() {
           </motion.div>
         }
       </AnimatePresence>
-    </nav>);
+    </nav>
+
+      {/* Mobil: feste Leiste zum Anrufen und Schreiben */}
+      <div className="md:hidden fixed bottom-0 inset-x-0 z-50 grid grid-cols-2 border-t border-border bg-background/95 backdrop-blur-md shadow-[0_-2px_8px_rgba(0,0,0,0.06)]">
+        <a
+          href={PHONE_HREF}
+          className="flex items-center justify-center gap-2 h-14 bg-primary text-primary-foreground font-heading font-semibold text-sm tracking-wider uppercase">
+          <Phone className="w-4 h-4" />
+          Anrufen
+        </a>
+        <a
+          href={WHATSAPP_HREF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 h-14 text-foreground font-heading font-semibold text-sm tracking-wider uppercase">
+          <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+          WhatsApp
+        </a>
+      </div>
+    </>);
 
 }

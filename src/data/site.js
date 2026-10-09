@@ -4,9 +4,9 @@ export const SITE_URL = "https://hausmeister-jauch.de";
 export const SITE_NAME = "Hausmeisterservice Sebastian Jauch";
 export const DEFAULT_TITLE = "Hausmeisterservice Sebastian Jauch – Gartenpflege & Reparaturen München Nord";
 export const DEFAULT_DESCRIPTION =
-  "Premium Hausmeisterservice für erstklassige Garten- und Objektpflege mit architektonischem Fokus.";
-export const OG_IMAGE = "/images/744b80371_ChatGPTImage10Juni202615_54_43.png";
-export const FAVICON = "/images/6bf64c176_websiteicon.png";
+  "Hausmeisterservice in Ismaning, Unterföhring & München Nord: Gartenpflege, Heckenschnitt, Objektbetreuung und Reparaturen. Jetzt kostenlos anfragen: 0174 640 31 78";
+export const OG_IMAGE = "/images/vorschau.jpg";
+export const FAVICON = "/images/favicon.png";
 export const GA_ID = "G-4JZQ49X87R";
 
 export const LOCAL_BUSINESS = {
