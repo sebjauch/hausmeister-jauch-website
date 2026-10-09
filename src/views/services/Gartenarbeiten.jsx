@@ -2,7 +2,7 @@ import React from "react";
 import { Check } from "lucide-react";
 import ServiceLayout from "@/components/service/ServiceLayout";
 
-const HERO = "/images/6a9b14516_schulhaus.jpeg";
+const HERO = "/images/6a9b14516_schulhaus.webp";
 
 const ITEMS = [
   "Hecke schneiden",

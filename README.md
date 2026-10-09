@@ -15,7 +15,8 @@ npm run dev
 - `src/views/` – Inhalt der Seiten (React)
 - `src/components/` – Bausteine wie Navigation, Formulare, Galerie
 - `src/data/site.js` – Firmendaten, Google-Analytics-ID, strukturierte Daten
-- `public/images/` – Bilder
+- `originals/images/` – Originalbilder
+- `public/images/` – verkleinerte Bilder für die Website (erzeugt mit `node scripts/optimize-images.mjs`)
 - `functions/api/contact.js` – Kontakt- und Bewerbungsformular (Versand über Resend)
 - `worker/index.js` + `wrangler.jsonc` – Cloudflare-Worker: leitet `/api/contact` an das Formular weiter, alles andere kommt aus `dist`
 

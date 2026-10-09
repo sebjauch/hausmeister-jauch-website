@@ -118,12 +118,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left: Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground block mb-3">
               KONTAKT
             </span>
@@ -153,15 +148,10 @@ export default function ContactSection() {
             </div>
 
             <ContactMap />
-          </motion.div>
+          </div>
 
           {/* Right: Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -301,7 +291,7 @@ export default function ContactSection() {
                 )}
               </button>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

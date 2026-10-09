@@ -2,7 +2,7 @@ import React from "react";
 import { Check } from "lucide-react";
 import ServiceLayout from "@/components/service/ServiceLayout";
 
-const HERO = "/images/308d22519_20260601_113140.jpg";
+const HERO = "/images/308d22519_20260601_113140.webp";
 
 const ITEMS = [
   "Terrassenreinigung",

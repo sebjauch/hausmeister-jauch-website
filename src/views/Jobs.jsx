@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/home/Navbar";
 import Footer from "@/components/home/Footer";
@@ -22,12 +21,7 @@ export default function Jobs() {
             ZURÜCK ZUR STARTSEITE
           </a>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl"
-          >
+          <div className="max-w-3xl">
             <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground block mb-3">
               KARRIERE
             </span>
@@ -41,7 +35,7 @@ export default function Jobs() {
             handwerkliches Geschick und Lust auf abwechslungsreiche Arbeit
             mitbringen, sind Sie bei uns richtig.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
