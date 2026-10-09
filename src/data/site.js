@@ -7,6 +7,7 @@ export const DEFAULT_DESCRIPTION =
   "Hausmeisterservice in Ismaning, Unterföhring & München Nord: Gartenpflege, Heckenschnitt, Objektbetreuung und Reparaturen. Jetzt kostenlos anfragen: 0174 640 31 78";
 export const OG_IMAGE = "/images/vorschau.jpg";
 export const FAVICON = "/images/favicon.png";
+export const GOOGLE_PROFILE = "https://maps.app.goo.gl/wQS4Wnj2BYfiWz7e8";
 export const GA_ID = "G-4JZQ49X87R";
 
 export const LOCAL_BUSINESS = {
@@ -31,7 +32,9 @@ export const LOCAL_BUSINESS = {
     { "@type": "City", name: "Ismaning" },
     { "@type": "City", name: "München" },
   ],
+  hasMap: GOOGLE_PROFILE,
   sameAs: [
+    GOOGLE_PROFILE,
     "https://www.instagram.com/hausmeisterjauch/",
     "https://www.facebook.com/profile.php?id=61593692862061",
   ],

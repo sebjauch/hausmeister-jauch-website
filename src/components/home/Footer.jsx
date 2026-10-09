@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowUp, X, MapPin, Facebook, Instagram } from "lucide-react";
+import { ArrowUp, X, MapPin, Facebook, Instagram, Star } from "lucide-react";
 
 export const WhatsAppIcon = ({ className }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -9,6 +9,7 @@ export const WhatsAppIcon = ({ className }) => (
 import DatenschutzModal from "@/components/home/DatenschutzModal";
 import { CookieSettingsModal } from "@/components/home/CookieBanner";
 import { saveConsent } from "@/lib/consent";
+import { GOOGLE_PROFILE } from "@/data/site";
 
 
 const LOGO_URL = "/images/logo-klein.webp";
@@ -217,6 +218,16 @@ export default function Footer() {
                   <WhatsAppIcon className="w-3.5 h-3.5" />
                 </a>
               </div>
+
+              <a
+                href={GOOGLE_PROFILE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 text-sm text-background/70 hover:text-background transition-colors"
+              >
+                <Star className="w-4 h-4 fill-accent text-accent" />
+                Bewertungen auf Google ansehen
+              </a>
             </div>
           </div>
 
