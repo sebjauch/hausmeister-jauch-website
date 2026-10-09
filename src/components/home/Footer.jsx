@@ -165,7 +165,7 @@ export default function Footer() {
               <div className="space-y-3 text-background/70 text-sm">
                 <p>Sebastian Jauch</p>
                 <p className="flex items-center gap-2">
-                  Zacherlstr. 12, 85737 Ismaning
+                  Zacherlstraße 12, 85737 Ismaning
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=Zacherlstr.+12,+85737+Ismaning"
                     target="_blank"
