@@ -10,9 +10,9 @@ const WHATSAPP_HREF = "https://wa.me/491746403178";
 const LOGO_URL = "/images/icon.webp";
 
 const navLinks = [
-{ label: "Über uns", href: "#ueber-mich" },
+{ label: "Über mich", href: "#ueber-mich" },
 { label: "Leistungen", href: "#leistungen" },
-{ label: "Projekte", href: "#projekte" },
+{ label: "Referenzen", href: "#projekte" },
 { label: "Jobs", href: "/jobs" },
 { label: "Kontakt", href: "#kontakt" }];
 

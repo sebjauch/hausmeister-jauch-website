@@ -7,7 +7,7 @@ const GROUPS = [
     icon: Home,
     title: "Privatkunden",
     description:
-      "Pflege und Instandhaltung von Haus, Garten und Grundstück. Wir kümmern uns um die kleinen und großen Aufgaben, damit Sie Ihre Freizeit genießen können.",
+      "Pflege und Instandhaltung von Haus, Garten und Grundstück. Ich kümmere mich um die kleinen und großen Aufgaben, damit Sie Ihre Freizeit genießen können.",
   },
   {
     icon: Building2,
@@ -19,7 +19,7 @@ const GROUPS = [
     icon: Briefcase,
     title: "Unternehmen",
     description:
-      "Pflege und Instandhaltung von Außenbereichen und Grundstücken. Wir sorgen für ein gepflegtes Umfeld, das bei Kunden und Mitarbeitern gleichermaßen einen positiven Eindruck hinterlässt.",
+      "Pflege und Instandhaltung von Außenbereichen und Grundstücken. Ich sorge für ein gepflegtes Umfeld, das bei Kunden und Mitarbeitern gleichermaßen einen positiven Eindruck hinterlässt.",
   },
 ];
 
@@ -33,11 +33,11 @@ export default function TargetGroupsSection() {
             ZIELGRUPPEN
           </span>
           <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold text-primary mb-6">
-            Für wen wir arbeiten
+            Für wen ich arbeite
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Für Privatkunden, Hausverwaltungen &amp; Unternehmen – wir passen
-            unsere Leistungen individuell an Ihre Bedürfnisse an.
+            Für Privatkunden, Hausverwaltungen &amp; Unternehmen – ich passe
+            meine Leistungen individuell an Ihre Bedürfnisse an.
           </p>
         </div>
 

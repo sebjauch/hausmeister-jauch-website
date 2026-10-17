@@ -7,17 +7,17 @@ export const FAQS = [
   {
     question: "Wie weit ist die Anfahrt nach Unterföhring?",
     answer:
-      "Unser Sitz ist im direkt angrenzenden Ismaning. Nach Unterföhring sind es nur wenige Minuten, deshalb können wir Termine flexibel einplanen.",
+      "Mein Sitz ist im direkt angrenzenden Ismaning. Nach Unterföhring sind es nur wenige Minuten, deshalb kann ich Termine flexibel einplanen.",
   },
   {
     question: "Betreuen Sie in Unterföhring auch Wohnanlagen und Gewerbeflächen?",
     answer:
-      "Ja. Neben Privatkunden übernehmen wir für Eigentümergemeinschaften, Hausverwaltungen und Unternehmen die Pflege von Außenanlagen, Objektkontrollen und kleinere Instandhaltungsarbeiten – einmalig oder regelmäßig.",
+      "Ja. Neben Privatkunden übernehme ich für Eigentümergemeinschaften, Hausverwaltungen und Unternehmen die Pflege von Außenanlagen, Objektkontrollen und kleinere Instandhaltungsarbeiten – einmalig oder regelmäßig.",
   },
   {
     question: "Was kostet ein Hausmeisterservice in Unterföhring?",
     answer:
-      "Das hängt von Art und Umfang der Arbeiten, der Größe des Objekts und der Entsorgung ab. Schicken Sie uns eine kurze Beschreibung und gerne ein paar Fotos, dann erhalten Sie ein transparentes, unverbindliches Angebot.",
+      "Das hängt von Art und Umfang der Arbeiten, der Größe des Objekts und der Entsorgung ab. Schicken Sie mir eine kurze Beschreibung und gerne ein paar Fotos, dann erhalten Sie ein transparentes, unverbindliches Angebot.",
   },
 ];
 
@@ -39,13 +39,13 @@ export default function Unterfoehring() {
     >
       <p>
         <strong>Unterföhring</strong> grenzt direkt an Ismaning, wo der{" "}
-        <strong>Hausmeisterservice Sebastian Jauch</strong> seinen Sitz hat. Dadurch sind wir in
-        wenigen Minuten bei Ihnen und können Arbeiten flexibel einplanen – vom einmaligen
+        <strong>Hausmeisterservice Sebastian Jauch</strong> seinen Sitz hat. Dadurch bin ich in
+        wenigen Minuten bei Ihnen und kann Arbeiten flexibel einplanen – vom einmaligen
         Heckenschnitt bis zur regelmäßigen Pflege Ihres Grundstücks.
       </p>
       <p>
         In Unterföhring gibt es neben Einfamilien- und Reihenhäusern viele Wohnanlagen und
-        Gewerbeflächen. Für Eigentümer, Hausverwaltungen und Unternehmen übernehmen wir die
+        Gewerbeflächen. Für Eigentümer, Hausverwaltungen und Unternehmen übernehme ich die
         Pflege der Außenanlagen, Objektkontrollen und kleinere Reparaturen, damit Ihr Objekt
         dauerhaft gepflegt aussieht.
       </p>

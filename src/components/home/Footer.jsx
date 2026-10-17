@@ -151,7 +151,7 @@ export default function Footer() {
                 <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Terrassenreinigung</a></li>
                 <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Regenrinnen reinigen</a></li>
                 <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Leuchtmittelaustausch</a></li>
-                <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Objektkontrolle</a></li>
+                <li><a href="/leistungen/aussenbereich-pflege" className="hover:text-background transition-colors">Kontrollgänge</a></li>
                 <li><a href="/leistungen/holzarbeiten-aussenbau" className="hover:text-background transition-colors">Holzarbeiten & Außenbau</a></li>
                 <li><a href="/leistungen/reparaturen-montage" className="hover:text-background transition-colors">Kleinere Reparaturen</a></li>
               </ul>

@@ -78,7 +78,7 @@ export default function ServiceLayout({
             Jetzt unverbindliches Angebot anfordern
           </h2>
           <p className="text-primary-foreground/80 mb-10 max-w-xl mx-auto">
-            Wir beraten Sie persönlich und erstellen Ihnen ein faires Angebot –
+            Ich berate Sie persönlich und erstelle Ihnen ein faires Angebot –
             schnell, transparent und unkompliziert.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

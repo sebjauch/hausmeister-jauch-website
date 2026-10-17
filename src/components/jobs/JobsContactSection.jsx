@@ -118,7 +118,7 @@ export default function JobsContactSection() {
               Vielen Dank für Ihre Bewerbung!
             </h3>
             <p className="text-muted-foreground text-lg">
-              Ihre Unterlagen wurden erfolgreich versendet. Wir melden uns
+              Ihre Unterlagen wurden erfolgreich versendet. Ich melde mich
               schnellstmöglich bei Ihnen.
             </p>
             <button
@@ -151,8 +151,8 @@ export default function JobsContactSection() {
               Jetzt bewerben!
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-md">
-              Sie haben Interesse an einer unserer Stellen oder möchten sich
-              initiativ bei uns vorstellen? Schreiben Sie uns – wir freuen uns
+              Sie haben Interesse an einer meiner Stellen oder möchten sich
+              initiativ bei mir vorstellen? Schreiben Sie mir – ich freue mich
               auf Ihre Bewerbung.
             </p>
 

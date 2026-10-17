@@ -17,7 +17,7 @@ const REASONS = [
   {
     icon: Sparkles,
     title: "Sauber",
-    description: "Wir hinterlassen das Grundstück ordentlich.",
+    description: "Ich hinterlasse das Grundstück ordentlich.",
   },
   {
     icon: Receipt,
@@ -38,13 +38,13 @@ export default function WhyUsSection() {
         {/* Header */}
         <div className="mb-16 lg:mb-20 max-w-2xl">
           <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground block mb-3">
-            UNSERE STÄRKEN
+            MEINE STÄRKEN
           </span>
           <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold text-primary mb-6">
             Warum Hausmeisterservice Sebastian Jauch?
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Fünf gute Gründe, warum Sie sich auf uns verlassen können.
+            Fünf gute Gründe, warum Sie sich auf mich verlassen können.
           </p>
         </div>
 

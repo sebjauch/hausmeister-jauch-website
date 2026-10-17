@@ -5,67 +5,67 @@ export const FAQS = [
   {
     question: "Was bietet der Hausmeisterservice Sebastian Jauch an?",
     answer:
-      "Der Hausmeisterservice Sebastian Jauch bietet zuverlässige Dienstleistungen rund um Haus, Grundstück und Außenanlagen. Unser Leistungsangebot umfasst insbesondere Gartenpflege, Objektbetreuung, kleinere Reparatur- und Instandhaltungsarbeiten sowie Holz- und Montagearbeiten. Wir übernehmen sowohl einzelne Aufträge als auch regelmäßige Arbeiten.",
+      "Der Hausmeisterservice Sebastian Jauch bietet zuverlässige Dienstleistungen rund um Haus, Grundstück und Außenanlagen. Mein Leistungsangebot umfasst insbesondere Gartenpflege, Objektbetreuung, kleinere Reparatur- und Instandhaltungsarbeiten, Holzarbeiten sowie Montagearbeiten innen wie Küchenmontage und Bodenverlegung. Ich übernehme sowohl einzelne Aufträge als auch regelmäßige Arbeiten.",
   },
   {
     question: "In welchem Gebiet ist der Hausmeisterservice tätig?",
     answer:
-      "Wir sind hauptsächlich in Ismaning, München Nord und der näheren Umgebung tätig. Unser Einsatzgebiet umfasst unter anderem Unterföhring, Garching bei München, Aschheim, Kirchheim bei München, Feldkirchen, Haar und weitere Orte im Münchner Umland. Sie sind sich nicht sicher, ob Ihr Standort in unserem Einsatzgebiet liegt? Fragen Sie uns einfach unverbindlich.",
+      "Ich bin hauptsächlich in Ismaning, München Nord und der näheren Umgebung tätig. Mein Einsatzgebiet umfasst unter anderem Unterföhring, Garching bei München, Aschheim, Kirchheim bei München, Feldkirchen, Haar und weitere Orte im Münchner Umland. Sie sind sich nicht sicher, ob Ihr Standort in meinem Einsatzgebiet liegt? Fragen Sie mich einfach unverbindlich.",
   },
   {
     question: "Übernehmen Sie auch regelmäßige Gartenpflege?",
     answer:
-      "Ja. Wir übernehmen sowohl einmalige Gartenarbeiten als auch regelmäßige Gartenpflege. Dazu gehören unter anderem Rasenmähen, Heckenschneiden, Strauchschnitt, Unkrautentfernung, Pflege von Außenanlagen sowie weitere saisonale Gartenarbeiten.",
+      "Ja. Ich übernehme sowohl einmalige Gartenarbeiten als auch regelmäßige Gartenpflege. Dazu gehören unter anderem Rasenmähen, Heckenschneiden, Strauchschnitt, Unkrautentfernung, Pflege von Außenanlagen sowie weitere saisonale Gartenarbeiten.",
   },
   {
     question: "Bieten Sie Heckenschnitt und Strauchschnitt an?",
     answer:
-      "Ja. Wir übernehmen Heckenschnitt und Strauchschnitt für private Grundstücke, Mehrfamilienhäuser und andere Objekte. Auf Wunsch kümmern wir uns auch um die Aufnahme und Entsorgung des anfallenden Grünschnitts.",
+      "Ja. Ich übernehme Heckenschnitt und Strauchschnitt für private Grundstücke, Mehrfamilienhäuser und andere Objekte. Auf Wunsch kümmere ich mich auch um die Aufnahme und Entsorgung des anfallenden Grünschnitts.",
   },
   {
     question: "Übernehmen Sie kleinere Reparaturen und Instandhaltungsarbeiten?",
     answer:
-      "Ja. Wir führen kleinere Reparatur-, Montage- und Instandhaltungsarbeiten rund um Haus, Wohnung und Grundstück aus. Dazu gehören beispielsweise kleinere Arbeiten an Zäunen, Sichtschutz, Türen, Außenanlagen und anderen Bereichen des Gebäudes. Größere oder fachlich spezialisierte Arbeiten sollten durch einen entsprechenden Fachbetrieb ausgeführt werden.",
+      "Ja. Ich führe kleinere Reparatur-, Montage- und Instandhaltungsarbeiten rund um Haus, Wohnung und Grundstück aus. Dazu gehören beispielsweise Arbeiten an Zäunen, Sichtschutz, Türen und Außenanlagen, aber auch Küchenmontage und Bodenverlegung. Größere oder fachlich spezialisierte Arbeiten sollten durch einen entsprechenden Fachbetrieb ausgeführt werden.",
   },
   {
     question: "Betreuen Sie auch Mehrfamilienhäuser und Immobilien?",
     answer:
-      "Ja. Wir übernehmen die regelmäßige Objektbetreuung von Immobilien und kümmern uns um anfallende Arbeiten rund um Gebäude und Außenanlagen. Unsere Leistungen können individuell auf Privatimmobilien, Mehrfamilienhäuser, Eigentümergemeinschaften, Hausverwaltungen und Gewerbeobjekte abgestimmt werden.",
+      "Ja. Ich übernehme die regelmäßige Objektbetreuung von Immobilien und kümmere mich um anfallende Arbeiten rund um Gebäude und Außenanlagen. Meine Leistungen können individuell auf Privatimmobilien, Mehrfamilienhäuser, Eigentümergemeinschaften, Hausverwaltungen und Gewerbeobjekte abgestimmt werden.",
   },
   {
     question: "Arbeiten Sie auch für Hausverwaltungen?",
     answer:
-      "Ja. Hausverwaltungen und Eigentümer können uns mit der laufenden Betreuung von Immobilien und Außenanlagen beauftragen. Je nach Objekt können beispielsweise regelmäßige Kontrollen, Gartenpflege, kleinere Instandhaltungsarbeiten und Reparaturen übernommen werden.",
+      "Ja. Hausverwaltungen und Eigentümer können mich mit der laufenden Betreuung von Immobilien und Außenanlagen beauftragen. Je nach Objekt können beispielsweise regelmäßige Kontrollen, Gartenpflege, kleinere Instandhaltungsarbeiten und Reparaturen übernommen werden.",
   },
   {
     question: "Kann ich Sie auch nur für eine einzelne Arbeit beauftragen?",
     answer:
-      "Ja. Sie können unseren Hausmeisterservice sowohl für einzelne Arbeiten als auch für eine regelmäßige Betreuung beauftragen. Ob Heckenschnitt, Gartenpflege, eine kleinere Reparatur oder eine andere Arbeit rund um Haus und Grundstück – wir erstellen Ihnen gerne ein individuelles Angebot.",
+      "Ja. Sie können meinen Hausmeisterservice sowohl für einzelne Arbeiten als auch für eine regelmäßige Betreuung beauftragen. Ob Heckenschnitt, Gartenpflege, eine kleinere Reparatur oder eine andere Arbeit rund um Haus und Grundstück – ich erstelle Ihnen gerne ein individuelles Angebot.",
   },
   {
     question: "Was kostet ein Hausmeisterservice?",
     answer:
-      "Die Kosten richten sich nach Art und Umfang der Arbeiten, Größe des Objekts, Zeitaufwand, Zugänglichkeit und gegebenenfalls der benötigten Entsorgung. Deshalb erstellen wir ein individuelles und transparentes Angebot. Bei vielen Arbeiten können Sie uns vorab Fotos und eine kurze Beschreibung Ihres Vorhabens schicken.",
+      "Die Kosten richten sich nach Art und Umfang der Arbeiten, Größe des Objekts, Zeitaufwand, Zugänglichkeit und gegebenenfalls der benötigten Entsorgung. Deshalb erstelle ich ein individuelles und transparentes Angebot. Bei vielen Arbeiten können Sie mir vorab Fotos und eine kurze Beschreibung Ihres Vorhabens schicken.",
   },
   {
     question: "Wie kann ich ein unverbindliches Angebot erhalten?",
     answer:
-      "Kontaktieren Sie uns telefonisch oder über unser Kontaktformular. Beschreiben Sie kurz, welche Arbeiten Sie benötigen. Bei Gartenarbeiten, Reparaturen oder anderen Projekten können Sie uns gerne Fotos zur Verfügung stellen. Anschließend besprechen wir die Details und erstellen Ihnen ein unverbindliches Angebot.",
+      "Rufen Sie mich an, schreiben Sie per WhatsApp oder nutzen Sie das Kontaktformular. Beschreiben Sie kurz, welche Arbeiten Sie benötigen. Bei Gartenarbeiten, Reparaturen oder anderen Projekten können Sie mir gerne Fotos schicken. Anschließend bespreche ich die Details mit Ihnen und erstelle Ihnen ein unverbindliches Angebot.",
   },
   {
     question: "Bieten Sie auch einmalige Gartenarbeiten an?",
     answer:
-      "Ja. Neben regelmäßiger Gartenpflege übernehmen wir auch einmalige Gartenarbeiten. Dazu gehören beispielsweise Heckenschnitt, Strauchschnitt, Rasenpflege, Rückschnitt von Pflanzen sowie weitere Arbeiten zur Pflege und Gestaltung von Außenanlagen.",
+      "Ja. Neben regelmäßiger Gartenpflege übernehme ich auch einmalige Gartenarbeiten. Dazu gehören beispielsweise Heckenschnitt, Strauchschnitt, Rasenpflege, Rückschnitt von Pflanzen sowie weitere Arbeiten zur Pflege und Gestaltung von Außenanlagen.",
   },
   {
     question: "Führen Sie auch Holzarbeiten aus?",
     answer:
-      "Ja. Wir übernehmen kleinere Holz- und Montagearbeiten im Außenbereich, beispielsweise an Zäunen, Sichtschutz, Terrassen und anderen Außenanlagen. Gerne prüfen wir Ihr Vorhaben und besprechen mit Ihnen die passende Umsetzung.",
+      "Ja. Ich übernehme Holz- und Montagearbeiten im Außenbereich, beispielsweise an Zäunen, Sichtschutz, Terrassen und anderen Außenanlagen. Gerne prüfe ich Ihr Vorhaben und bespreche mit Ihnen die passende Umsetzung.",
   },
   {
     question: "Kann ich vorab einen Besichtigungstermin vereinbaren?",
     answer:
-      "Bei umfangreicheren Arbeiten oder einer regelmäßigen Objektbetreuung ist eine Besichtigung vor Ort sinnvoll. Dadurch können wir den Arbeitsaufwand und die örtlichen Gegebenheiten besser einschätzen und Ihnen ein möglichst genaues Angebot erstellen.",
+      "Bei umfangreicheren Arbeiten oder einer regelmäßigen Objektbetreuung ist eine Besichtigung vor Ort sinnvoll. Dadurch kann ich den Arbeitsaufwand und die örtlichen Gegebenheiten besser einschätzen und Ihnen ein möglichst genaues Angebot erstellen.",
   },
   {
     question: "Warum einen regionalen Hausmeisterservice beauftragen?",
@@ -75,12 +75,12 @@ export const FAQS = [
   {
     question: "Kann ich die Kosten für einen Hausmeisterservice steuerlich absetzen?",
     answer:
-      "Ja, unter bestimmten Voraussetzungen können Sie die Kosten für haushaltsnahe Dienstleistungen steuerlich geltend machen. Zu den haushaltsnahen Dienstleistungen gehören beispielsweise Gartenpflege, Reinigung, Reparaturen und Wartungsarbeiten, die in oder rund um Ihre Wohnung erbracht werden. Sie können 20 % der Arbeitskosten (ohne Materialkosten), maximal 4.000 Euro pro Jahr, direkt von Ihrer Steuerschuld abziehen. Voraussetzung ist, dass die Rechnung per Überweisung bezahlt wird und die Arbeitskosten separat ausgewiesen sind. Bitte bewahren Sie die Rechnung und den Zahlungsbeleg für Ihre Steuererklärung auf. Für verbindliche Auskünfte empfehlen wir, einen Steuerberater oder das zuständige Finanzamt zu kontaktieren.",
+      "Ja, unter bestimmten Voraussetzungen. Für Arbeiten in oder rund um Ihre Wohnung können Sie 20 % der Arbeitskosten (ohne Materialkosten) direkt von Ihrer Steuerschuld abziehen. Dabei gelten zwei getrennte Höchstbeträge: Für haushaltsnahe Dienstleistungen wie Gartenpflege, Rasenmähen oder Heckenschnitt sind es maximal 4.000 Euro pro Jahr. Für Handwerkerleistungen wie Reparaturen, Montage, Bodenverlegung oder Holzarbeiten sind es zusätzlich maximal 1.200 Euro pro Jahr. Voraussetzung ist, dass die Rechnung per Überweisung bezahlt wird und die Arbeitskosten separat ausgewiesen sind. Bitte bewahren Sie die Rechnung und den Zahlungsbeleg für Ihre Steuererklärung auf. Für verbindliche Auskünfte empfehle ich, einen Steuerberater oder das zuständige Finanzamt zu kontaktieren.",
   },
   {
     question: "Warum Hausmeisterservice Sebastian Jauch?",
     answer:
-      "Wir stehen für persönliche Betreuung, zuverlässige Terminabsprachen und eine saubere Ausführung der vereinbarten Arbeiten. Als regionaler Hausmeisterservice sind wir Ihr persönlicher Ansprechpartner für Gartenpflege, Objektbetreuung sowie kleinere Reparatur- und Instandhaltungsarbeiten rund um Haus und Grundstück.",
+      "Ich stehe für persönliche Betreuung, zuverlässige Terminabsprachen und eine saubere Ausführung der vereinbarten Arbeiten. Als regionaler Hausmeisterservice bin ich Ihr persönlicher Ansprechpartner für Gartenpflege, Objektbetreuung sowie kleinere Reparatur- und Instandhaltungsarbeiten rund um Haus und Grundstück.",
   },
 ];
 

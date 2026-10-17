@@ -53,7 +53,7 @@ export function CookieSettingsModal({ onClose, onSave }) {
               <div>
                 <span className="font-heading font-semibold text-foreground block mb-1">Statistik</span>
                 <p className="text-muted-foreground leading-relaxed">
-                  Anonymisierte Daten helfen uns zu verstehen, wie Besucher mit
+                  Anonymisierte Daten helfen mir zu verstehen, wie Besucher mit
                   der Website interagieren, um Verbesserungen vorzunehmen.
                 </p>
               </div>
@@ -130,10 +130,9 @@ export default function CookieBanner() {
                         Cookies & Datenschutz
                       </h2>
                       <p className="text-background/70 text-sm leading-relaxed max-w-2xl">
-                        Wir verwenden Cookies, um Ihnen das beste Erlebnis auf unserer
-                        Website zu bieten. Notwendige Cookies sind für den Betrieb
-                        erforderlich. Statistik- und Marketing-Cookies helfen uns,
-                        unsere Services weiter zu verbessern.
+                        Notwendige Cookies sind für den Betrieb der Website erforderlich.
+                        Mit Ihrer Zustimmung nutze ich außerdem Google Analytics, um zu
+                        sehen, wie Besucher die Website nutzen.
                       </p>
                     </div>
                   </div>

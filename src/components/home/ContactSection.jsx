@@ -123,10 +123,10 @@ export default function ContactSection() {
               KONTAKT
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold text-primary mb-6">
-              Kontaktieren Sie uns!
+              Was darf ich für Sie erledigen?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-md">
-              Beschreiben Sie uns Ihr Anliegen und wir erstellen Ihnen ein
+              Beschreiben Sie mir Ihr Anliegen, gerne mit Fotos, und ich erstelle Ihnen ein
               unverbindliches Angebot. Persönlich, schnell und unkompliziert.
             </p>
 

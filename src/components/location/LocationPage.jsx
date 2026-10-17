@@ -10,7 +10,7 @@ const SERVICES = [
   },
   {
     title: "Außenbereich & Pflege",
-    text: "Terrassen, Regenrinnen, Wege und Einfahrten, Objektkontrolle.",
+    text: "Terrassen, Regenrinnen, Wege und Einfahrten, Kontrollgänge.",
     href: "/leistungen/aussenbereich-pflege",
   },
   {
@@ -27,9 +27,9 @@ const SERVICES = [
 
 const STEPS = [
   "Sie rufen an, schreiben per WhatsApp oder nutzen das Kontaktformular – gerne mit Fotos.",
-  "Bei größeren Arbeiten schauen wir uns das Objekt vor Ort an.",
+  "Bei größeren Arbeiten schaue ich mir das Objekt vor Ort an.",
   "Sie erhalten ein transparentes, unverbindliches Angebot.",
-  "Wir erledigen die Arbeiten zum vereinbarten Termin und hinterlassen alles ordentlich.",
+  "Ich erledige die Arbeiten zum vereinbarten Termin und hinterlasse alles ordentlich.",
 ];
 
 /**
@@ -41,7 +41,7 @@ export default function LocationPage({ place, title, lead, heroImage, advantages
     <ServiceLayout eyebrow={`EINSATZGEBIET ${place.toUpperCase()}`} title={title} lead={lead} heroImage={heroImage}>
       {children}
 
-      <h2 className="font-heading text-2xl font-bold text-primary">Unsere Leistungen in {place}</h2>
+      <h2 className="font-heading text-2xl font-bold text-primary">Meine Leistungen in {place}</h2>
       <div className="grid sm:grid-cols-2 gap-4 not-prose">
         {SERVICES.map((s) => (
           <a
@@ -58,7 +58,7 @@ export default function LocationPage({ place, title, lead, heroImage, advantages
         ))}
       </div>
 
-      <h2 className="font-heading text-2xl font-bold text-primary">Warum Kunden in {place} uns beauftragen</h2>
+      <h2 className="font-heading text-2xl font-bold text-primary">Warum Kunden in {place} mich beauftragen</h2>
       <ul className="space-y-3">
         {advantages.map((item) => (
           <li key={item} className="flex items-start gap-3">
