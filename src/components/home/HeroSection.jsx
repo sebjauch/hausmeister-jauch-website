@@ -1,8 +1,13 @@
 import React from "react";
-import { ArrowDown } from "lucide-react";
+import { Check, Phone } from "lucide-react";
 
-const LOGO_URL = "/images/logo.webp";
-const HERO_IMAGE = "/images/24b54621a_20240629_102308.webp";
+const HERO_IMAGE = "/images/9be22a100_20230617_104423.webp";
+
+const CHECKS = [
+  "Fester Ansprechpartner",
+  "Kostenloses Angebot",
+  "Rechnung steuerlich absetzbar",
+];
 
 export default function HeroSection() {
   const scrollTo = (e, id) => {
@@ -14,63 +19,58 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center px-8 lg:px-16 py-16 text-center">
-      <div className="flex flex-col items-center max-w-3xl">
-        <img
-          src={LOGO_URL}
-          alt="SJ Hausmeisterservice Logo"
-          width={560}
-          height={560}
-          fetchpriority="high"
-          className="w-full max-w-[560px] h-auto mb-10" />
+    <section className="pt-24 lg:pt-32 pb-16 lg:pb-24 px-6 lg:px-10">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div>
+          <p className="font-heading text-sm font-semibold text-accent mb-4">
+            Hausmeisterservice Sebastian Jauch
+          </p>
 
-        <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground uppercase mb-4">
-          
-          Hausmeisterservice
-        </p>
+          <h1 className="font-heading text-3xl sm:text-4xl xl:text-5xl font-bold leading-[1.15] text-primary mb-5">
+            Ihr Hausmeister in Ismaning, Unterföhring und München Nord
+          </h1>
 
-        <h1 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.15] text-primary mb-3">
-          
-          Ihr Hausmeisterservice in
-          <br />
-          <span className="text-primary">Ismaning, München und Umgebung.</span>
-        </h1>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-xl mb-8">
+            Gartenpflege, Objektbetreuung, Reparaturen und Montage – zuverlässig
+            erledigt von einem festen Ansprechpartner.
+          </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-xl mb-3">
-          
-          Gartenpflege, Objektbetreuung, kleinere Reparaturen und
-          Instandhaltungsarbeiten – persönlich, kompetent und zuverlässig.
-        </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
+            <a
+              href="#kontakt"
+              onClick={(e) => scrollTo(e, "#kontakt")}
+              className="text-center bg-primary text-primary-foreground px-7 py-4 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-primary/90 transition-colors duration-300">
+              Anfrage mit Fotos senden
+            </a>
+            <a
+              href="tel:+491746403178"
+              className="inline-flex items-center justify-center gap-2 border border-foreground/20 text-foreground px-7 py-4 font-heading font-semibold text-sm tracking-wider hover:bg-foreground/5 transition-colors duration-300">
+              <Phone className="w-4 h-4" />
+              0174 640 31 78
+            </a>
+          </div>
 
-        <p className="font-heading text-sm tracking-wide text-accent uppercase mb-10">
-          
-          Ihr Zuhause in besten Händen
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4">
-          
-          <a
-            href="#kontakt"
-            onClick={(e) => scrollTo(e, "#kontakt")}
-            className="text-center bg-primary text-primary-foreground px-8 py-4 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-primary/90 transition-colors duration-300">
-            
-            Kostenlose Anfrage
-          </a>
-          <a
-            href="#leistungen"
-            onClick={(e) => scrollTo(e, "#leistungen")}
-            className="text-center border border-foreground/20 text-foreground px-8 py-4 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-foreground/5 transition-colors duration-300">
-            
-            Leistungen ansehen
-          </a>
+          <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-x-6 gap-y-2">
+            {CHECKS.map((c) => (
+              <li key={c} className="flex items-center gap-2 text-sm text-foreground">
+                <Check className="w-4 h-4 text-accent shrink-0" />
+                {c}
+              </li>
+            ))}
+          </ul>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="hidden lg:flex items-center gap-3 mt-20">
-          <ArrowDown className="w-4 h-4 text-muted-foreground animate-bounce" />
-          <span className="font-mono text-xs text-muted-foreground tracking-wider">NACH UNTEN SCROLLEN</span>
+        <div className="relative h-64 sm:h-80 lg:h-[520px] overflow-hidden">
+          <img
+            src={HERO_IMAGE}
+            alt="Heckenschnitt und Grünpflege durch Sebastian Jauch"
+            width={1024}
+            height={577}
+            fetchpriority="high"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

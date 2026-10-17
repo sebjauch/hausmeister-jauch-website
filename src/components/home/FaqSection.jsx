@@ -84,6 +84,8 @@ export const FAQS = [
   },
 ];
 
+const VISIBLE_FAQS = 6;
+
 function FaqItem({ item, isOpen, onToggle }) {
   return (
     <div className="border-b border-border">
@@ -119,14 +121,12 @@ function FaqItem({ item, isOpen, onToggle }) {
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState(0);
+  const [showAll, setShowAll] = useState(false);
 
   return (
     <section id="faq" className="py-20 lg:py-28 px-6 lg:px-10 bg-secondary/50">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12 lg:mb-16">
-          <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground block mb-3">
-            FAQ
-          </span>
           <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary">
             Häufig gestellte Fragen
           </h2>
@@ -134,14 +134,27 @@ export default function FaqSection() {
 
         <div className="border-t border-border">
           {FAQS.map((item, i) => (
-            <FaqItem
-              key={i}
-              item={item}
-              isOpen={openIndex === i}
-              onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
-            />
+            <div key={i} className={!showAll && i >= VISIBLE_FAQS ? "hidden" : ""}>
+              <FaqItem
+                item={item}
+                isOpen={openIndex === i}
+                onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
+              />
+            </div>
           ))}
         </div>
+
+        {!showAll && (
+          <div className="mt-8 text-center">
+            <button
+              type="button"
+              onClick={() => setShowAll(true)}
+              className="border border-foreground/20 text-foreground px-7 py-3 font-heading font-semibold text-sm tracking-wider uppercase hover:bg-foreground/5 transition-colors"
+            >
+              Alle {FAQS.length} Fragen anzeigen
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

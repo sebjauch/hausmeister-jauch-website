@@ -117,16 +117,16 @@ export default function CookieBanner() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.35 }}
-            className="fixed bottom-14 md:bottom-0 inset-x-0 z-[70] px-4 pb-4 sm:px-6 sm:pb-6">
+            className="fixed bottom-14 md:bottom-0 inset-x-0 z-[70] px-3 pb-3 sm:px-6 sm:pb-6">
             <div className="max-w-5xl mx-auto bg-foreground text-background shadow-2xl border-t-2 border-accent">
-              <div className="p-5 sm:p-7">
-                <div className="flex flex-col lg:flex-row items-start gap-5">
+              <div className="p-4 sm:p-7">
+                <div className="flex flex-col lg:flex-row items-start gap-4 sm:gap-5">
                   <div className="flex items-start gap-4 flex-1">
-                    <div className="w-10 h-10 bg-accent/20 flex items-center justify-center shrink-0">
+                    <div className="hidden sm:flex w-10 h-10 bg-accent/20 items-center justify-center shrink-0">
                       <ShieldCheck className="w-5 h-5 text-accent" />
                     </div>
                     <div>
-                      <h2 className="font-heading text-lg font-bold mb-1.5 text-background">
+                      <h2 className="font-heading text-base sm:text-lg font-bold mb-1 sm:mb-1.5 text-background">
                         Cookies & Datenschutz
                       </h2>
                       <p className="text-background/70 text-sm leading-relaxed max-w-2xl">
@@ -137,20 +137,20 @@ export default function CookieBanner() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0">
+                  <div className="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-3 w-full lg:w-auto shrink-0">
                     <button
                       onClick={() => setShowSettings(true)}
-                      className="font-heading font-semibold text-xs tracking-wider uppercase text-background/80 border border-background/30 px-5 py-3 hover:bg-background/10 transition-colors">
+                      className="font-heading font-semibold text-xs tracking-wider uppercase text-background/80 border border-background/30 px-3 sm:px-5 py-3 order-2 sm:order-none hover:bg-background/10 transition-colors">
                       Einstellungen
                     </button>
                     <button
                       onClick={acceptNecessary}
-                      className="font-heading font-semibold text-xs tracking-wider uppercase text-background border border-background/30 px-5 py-3 hover:bg-background/10 transition-colors">
+                      className="font-heading font-semibold text-xs tracking-wider uppercase text-background border border-background/30 px-3 sm:px-5 py-3 order-3 sm:order-none hover:bg-background/10 transition-colors">
                       Nur Notwendige
                     </button>
                     <button
                       onClick={acceptAll}
-                      className="font-heading font-semibold text-xs tracking-wider uppercase bg-accent text-foreground px-5 py-3 hover:bg-accent/90 transition-colors">
+                      className="font-heading font-semibold text-xs tracking-wider uppercase bg-accent text-foreground px-3 sm:px-5 py-3 col-span-2 order-1 sm:order-none hover:bg-accent/90 transition-colors">
                       Alle akzeptieren
                     </button>
                   </div>
