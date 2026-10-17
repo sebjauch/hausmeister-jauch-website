@@ -18,7 +18,7 @@ const services = [
   title: "Außenbereich & Pflege",
   icon: Droplets,
   description: "Rund ums Haus im Blick — professionell und zuverlässig.",
-  items: ["Terrassenreinigung", "Regenrinnen leeren und reinigen", "Wege & Einfahrten", "Kehrarbeiten", "Leuchtmittelaustausch", "Objektkontrolle", "Drohnenservice"],
+  items: ["Terrassenreinigung", "Regenrinnen leeren und reinigen", "Wege & Einfahrten", "Kehrarbeiten", "Leuchtmittelaustausch", "Regelmäßige Kontrollgänge", "Dachrinnenkontrolle per Drohne"],
   image: "/images/308d22519_20260601_113140.webp",
   link: "/leistungen/aussenbereich-pflege"
 },
@@ -26,8 +26,8 @@ const services = [
   id: "03",
   title: "Reparaturen & Montage",
   icon: Wrench,
-  description: "Kleine Schäden, große Wirkung — schnell und zuverlässig behoben.",
-  items: ["Kleinere Reparaturen", "Instandhaltungsmaßnahmen", "Montagearbeiten", "Sichtschutz"],
+  description: "Tür klemmt, Zaun wackelt, neue Küche oder neuer Boden – ich erledige es.",
+  items: ["Kleinere Reparaturen", "Instandhaltungsmaßnahmen", "Montagearbeiten innen und außen", "Küchenmontage", "Böden verlegen"],
   image: "/images/7c00859b0_20240917_160555.webp",
   link: "/leistungen/reparaturen-montage"
 },
@@ -35,7 +35,7 @@ const services = [
   id: "04",
   title: "Holzarbeiten & Außenbau",
   icon: Hammer,
-  description: "Individuelle Lösungen aus Holz für Haus und Garten. Ob Terrassen, Zäune, Sichtschutzelemente oder Balkonverkleidungen – wir fertigen hochwertige Holzarbeiten nach Ihren Wünschen.",
+  description: "Individuelle Lösungen aus Holz für Haus und Garten. Ob Terrassen, Zäune, Sichtschutzelemente oder Balkonverkleidungen – ich fertige hochwertige Holzarbeiten nach Ihren Wünschen.",
   items: ["Terrassen aus Holz", "Zäune & Sichtschutz", "Balkonverkleidungen", "Maßarbeit nach Wunsch"],
   image: "/images/e5a6cf3b0_20210818_134337.webp",
   link: "/leistungen/holzarbeiten-aussenbau"
@@ -55,7 +55,7 @@ export default function ServicesSection() {
               LEISTUNGEN
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold text-primary">
-              Was wir anbieten
+              Meine Leistungen
             </h2>
           </div>
           

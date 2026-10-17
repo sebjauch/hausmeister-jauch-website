@@ -27,11 +27,11 @@ export default function Holzarbeiten() {
         aufwertet. Der <strong>Hausmeisterservice Sebastian Jauch</strong> fertigt Holzarbeiten
         für den Außenbereich individuell nach Maß – für Kunden in <strong>München Nord</strong>,
         Ismaning, Garching, Unterföhring, Hallbergmoos und Umgebung. Von der
-        Terrasse über den Zaun bis zur Balkonverkleidung: Wir beraten Sie
-        ehrlich und setzen Ihr Vorhaben sauber um.
+        Terrasse über den Zaun bis zur Balkonverkleidung: Ich berate Sie
+        ehrlich und setze Ihr Vorhaben sauber um.
       </p>
 
-      <h2 className="font-heading text-2xl font-bold text-primary">Unsere Holzarbeiten im Überblick</h2>
+      <h2 className="font-heading text-2xl font-bold text-primary">Meine Holzarbeiten im Überblick</h2>
       <ul className="space-y-3">
         {ITEMS.map((item) => (
           <li key={item} className="flex items-start gap-3">
@@ -43,15 +43,15 @@ export default function Holzarbeiten() {
 
       <h2 className="font-heading text-2xl font-bold text-primary">Terrassen aus Holz in München Nord</h2>
       <p>
-        Eine Holzterrasse erweitert den Wohnraum nach draußen. Wir planen und
-        bauen Terrassen aus Holz passend zu Ihrem Grundstück – inklusive
-        Unterkonstruktion und Belag. Dabei achten wir auf witterungsbeständige
+        Eine Holzterrasse erweitert den Wohnraum nach draußen. Ich plane und
+        baue Terrassen aus Holz passend zu Ihrem Grundstück – inklusive
+        Unterkonstruktion und Belag. Dabei achte ich auf witterungsbeständige
         Hölzer und eine saubere, dauerhafte Ausführung.
       </p>
 
       <h2 className="font-heading text-2xl font-bold text-primary">Zäune & Sichtschutz aus Holz</h2>
       <p>
-        Ob klassischer Lattenzaun, Sichtschutz oder Raumtrenner – wir fertigen
+        Ob klassischer Lattenzaun, Sichtschutz oder Raumtrenner – ich fertige
         Zäune und Sichtschutzelemente nach Ihren Vorstellungen. So schaffen Sie
         Privatsphäre und setzen gleichzeitig stilvolle Akzente für Ihr
         Grundstück im nördlichen Münchner Umland.
@@ -60,17 +60,17 @@ export default function Holzarbeiten() {
       <h2 className="font-heading text-2xl font-bold text-primary">Balkonverkleidungen</h2>
       <p>
         Eine hochwertige Balkonverkleidung schützt und verschönert zugleich.
-        Wir verkleiden Balkone individuell nach Maß – passend zur Architektur
+        Ich verkleide Balkone individuell nach Maß – passend zur Architektur
         Ihres Hauses und Ihren farblichen Wünschen. Sauber verarbeitet und
         langlebig, damit Sie lange Freude daran haben.
       </p>
 
       <h2 className="font-heading text-2xl font-bold text-primary">Maßarbeit nach Wunsch</h2>
       <p>
-        Jedes Grundstück ist anders, jeder Kunde hat eigene Vorstellungen. Wir
-        arbeiten daher grundsätzlich nach Maß: Sie beschreiben uns Ihr
-        Vorhaben, wir beraten Sie zu Material und Umsetzung und fertigen das
-        Ergebnis passgenau. Melden Sie sich an – wir freuen uns auf Ihr
+        Jedes Grundstück ist anders, jeder Kunde hat eigene Vorstellungen. Ich
+        arbeite daher grundsätzlich nach Maß: Sie beschreiben mir Ihr
+        Vorhaben, ich berate Sie zu Material und Umsetzung und fertige das
+        Ergebnis passgenau. Melden Sie sich – ich freue mich auf Ihr
         Projekt.
       </p>
     </ServiceLayout>

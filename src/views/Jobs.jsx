@@ -26,14 +26,14 @@ export default function Jobs() {
               KARRIERE
             </span>
             <h1 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold text-primary mb-6 leading-[1.15]">
-              Wir suchen Verstärkung
+              Ich suche Verstärkung
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Der Hausmeisterservice Sebastian Jauch wächst – und wir suchen
+              Der Hausmeisterservice Sebastian Jauch wächst – und ich suche
               Menschen, die mit anpacken wollen. Ob als Hausmeister, im
             Winterräumdienst, als Bodenleger oder Gartenbauer: Wenn Sie
             handwerkliches Geschick und Lust auf abwechslungsreiche Arbeit
-            mitbringen, sind Sie bei uns richtig.
+            mitbringen, sind Sie bei mir richtig.
             </p>
           </div>
         </div>

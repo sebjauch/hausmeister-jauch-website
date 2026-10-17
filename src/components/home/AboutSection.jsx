@@ -30,7 +30,7 @@ export default function AboutSection() {
           transition={{ duration: 0.6, delay: 0.15 }}
         >
           <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground block mb-3">
-            ÜBER UNS
+            ÜBER MICH
           </span>
           <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold text-primary mb-6">
             Hausmeisterservice Sebastian Jauch

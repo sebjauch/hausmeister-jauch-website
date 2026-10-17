@@ -83,7 +83,7 @@ export default function GallerySection() {
               REFERENZEN
             </span>
             <h2 className="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold text-primary">
-              Einblicke in unsere Arbeit
+              Fotos von echten Aufträgen
             </h2>
           </div>
           

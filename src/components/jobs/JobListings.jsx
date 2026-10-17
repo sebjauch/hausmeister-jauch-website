@@ -9,7 +9,7 @@ const JOBS = [
     type: "Vollzeit / Teilzeit",
     location: "Ismaning & München Nord",
     summary:
-      "Als Hausmeister sorgen Sie für den reibungslosen Ablauf rund um unsere Kundenobjekte – von der Gartenpflege über Reinigungsarbeiten bis hin zu kleinen Reparaturen.",
+      "Als Hausmeister sorgen Sie für den reibungslosen Ablauf rund um die Objekte meiner Kunden – von der Gartenpflege über Reinigungsarbeiten bis hin zu kleinen Reparaturen.",
     tasks: [
       "Regelmäßige Betreuung von Wohn- und Geschäftsobjekten",
       "Garten- und Außenflächenpflege",
@@ -29,7 +29,7 @@ const JOBS = [
     type: "Saison / Teilzeit",
     location: "Ismaning & Umgebung",
     summary:
-      "Im Winterhalbjahr sorgen Sie dafür, dass Wege, Einfahrten und Stellflächen unserer Kunden schnee- und eisfrei gehalten werden – sicher und termintreu.",
+      "Im Winterhalbjahr sorgen Sie dafür, dass Wege, Einfahrten und Stellflächen meiner Kunden schnee- und eisfrei gehalten werden – sicher und termintreu.",
     tasks: [
       "Räumen und Streuen von Wegen und Einfahrten",
       "Einsatz bei Schnee- und Eisglätte nach Wetterlage",
@@ -69,7 +69,7 @@ const JOBS = [
     type: "Minijob / Flexibel",
     location: "Ismaning & München Nord",
     summary:
-      "Sie unterstützen unser Team bei den vielfältigen Aufgaben rund um Haus und Garten – flexibel nach Absprache und je nach Auftragslage.",
+      "Sie unterstützen mich bei den vielfältigen Aufgaben rund um Haus und Garten – flexibel nach Absprache und je nach Auftragslage.",
     tasks: [
       "Mithilfe bei Garten- und Außenarbeiten",
       "Kleinere Reparaturen und Montagearbeiten",
@@ -89,7 +89,7 @@ const JOBS = [
     type: "Teilzeit / Minijob",
     location: "Ismaning & München Nord",
     summary:
-      "Als Reinigungskraft sorgen Sie für Sauberkeit und Ordnung in Wohn- und Geschäftsobjekten unserer Kunden – zuverlässig, gründlich und mit Blick fürs Detail.",
+      "Als Reinigungskraft sorgen Sie für Sauberkeit und Ordnung in Wohn- und Geschäftsobjekten meiner Kunden – zuverlässig, gründlich und mit Blick fürs Detail.",
     tasks: [
       "Unterhalts- und Endreinigung von Wohn- und Geschäftsobjekten",
       "Treppenhaus- und Gemeinschaftsflächenreinigung",
@@ -109,7 +109,7 @@ const JOBS = [
     type: "Vollzeit / Teilzeit",
     location: "München Nord & Umgebung",
     summary:
-      "Als Gartenbauer gestalten und pflegen Sie Gärten und Außenanlagen unserer Kunden – von der Bepflanzung über den Rasen bis zum Heckenschnitt.",
+      "Als Gartenbauer gestalten und pflegen Sie Gärten und Außenanlagen meiner Kunden – von der Bepflanzung über den Rasen bis zum Heckenschnitt.",
     tasks: [
       "Pflege und Neuanlage von Gärten und Außenanlagen",
       "Heckenschnitt, Baumschnitt und Rasenpflege",
@@ -138,9 +138,9 @@ export default function JobListings() {
             Offene Stellen
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            Wir suchen motivierte Menschen, die mit Leib und Seele anpacken. Wenn
-            Sie Lust auf abwechslungsreiche Arbeit in einem familiären Team
-            haben, freuen wir uns auf Ihre Bewerbung.
+            Ich suche motivierte Menschen, die mit Leib und Seele anpacken. Wenn
+            Sie Lust auf abwechslungsreiche Arbeit in einem kleinen, familiären Betrieb
+            haben, freue ich mich auf Ihre Bewerbung.
           </p>
         </div>
 

@@ -10,8 +10,8 @@ const ITEMS = [
   "Wege & Einfahrten",
   "Kehrarbeiten",
   "Leuchtmittelaustausch",
-  "Objektkontrolle",
-  "Drohnenservice",
+  "Regelmäßige Kontrollgänge",
+  "Dach- und Dachrinnenkontrolle per Drohne",
 ];
 
 export default function Aussenbereich() {
@@ -22,7 +22,7 @@ export default function Aussenbereich() {
       metaDescription="Terrassenreinigung, Regenrinnen reinigen, Wege & Einfahrten pflegen, Leuchtmittelaustausch und Objektkontrolle in München Nord & Ismaning. Hausmeisterservice Sebastian Jauch – Ihr zuverlässiger Partner rund ums Haus."
       eyebrow="LEISTUNG"
       title="Außenbereich & Pflege rund ums Haus"
-      lead="Sauber, sicher und gepflegt: Wir halten den Außenbereich Ihrer Immobilie in Schuss – von der Terrasse über die Regenrinne bis zum Leuchtmittelaustausch, in Ismaning und Umgebung."
+      lead="Sauber, sicher und gepflegt: Ich halte den Außenbereich Ihrer Immobilie in Schuss – von der Terrasse über die Regenrinne bis zum Leuchtmittelaustausch, in Ismaning und Umgebung."
       heroImage={HERO}
     >
       <p>
@@ -33,7 +33,7 @@ export default function Aussenbereich() {
         Garching, Unterföhring und Umgebung – zuverlässig und nach Absprache.
       </p>
 
-      <h2 className="font-heading text-2xl font-bold text-primary">Unsere Leistungen für den Außenbereich</h2>
+      <h2 className="font-heading text-2xl font-bold text-primary">Meine Leistungen für den Außenbereich</h2>
       <ul className="space-y-3">
         {ITEMS.map((item) => (
           <li key={item} className="flex items-start gap-3">
@@ -45,45 +45,45 @@ export default function Aussenbereich() {
 
       <h2 className="font-heading text-2xl font-bold text-primary">Terrassenreinigung in München Nord</h2>
       <p>
-        Algen, Moos und Schmutz machen Terrassen rutschig und unansehnlich. Wir
-        reinigen Terrassen, Wege und Einfahrten gründlich und schonend zum
+        Algen, Moos und Schmutz machen Terrassen rutschig und unansehnlich. Ich
+        reinige Terrassen, Wege und Einfahrten gründlich und schonend zum
         Belag – für eine saubere, einladende Fläche, die wieder richtig zur
-        Geltung kommt. Auf Wunsch übernehmen wir die Reinigung als
+        Geltung kommt. Auf Wunsch übernehme ich die Reinigung als
         wiederkehrende Maßnahme.
       </p>
 
       <h2 className="font-heading text-2xl font-bold text-primary">Regenrinnen leeren und reinigen</h2>
       <p>
         Verstopfte Regenrinnen sind eine häufige Ursache für Wasserschäden.
-        Wir leeren und reinigen Ihre Dachrinnen im Raum München Nord, entfernen
-        Laub, Moos und Ablagerungen und prüfen dabei den Zustand der Rinne.
+        Ich leere und reinige Ihre Dachrinnen im Raum München Nord, entferne
+        Laub, Moos und Ablagerungen und prüfe dabei den Zustand der Rinne.
         So bleibt das Wasser dort, wo es hingehört – in der Rinne und nicht an
         der Fassade.
       </p>
 
-      <h2 className="font-heading text-2xl font-bold text-primary">Leuchtmittelaustausch und Objektkontrolle</h2>
+      <h2 className="font-heading text-2xl font-bold text-primary">Leuchtmittelaustausch und Kontrollgänge</h2>
       <p>
-        Defekte Außenbeleuchtung beeinträchtigt Sicherheit und Optik. Wir
-        tauschen Leuchtmittel an gut erreichbaren Stellen aus und halten Ihre
-        Außenbereiche hell. Ergänzend übernehmen wir die regelmäßige
-        Objektkontrolle für Wohnanlagen und Geschäftsobjekte – wir melden
-        Schäden frühzeitig und beheben kleinere Mängel direkt.
+        Defekte Außenbeleuchtung beeinträchtigt Sicherheit und Optik. Ich
+        tausche Leuchtmittel an gut erreichbaren Stellen aus und halte Ihre
+        Außenbereiche hell. Ergänzend übernehme ich regelmäßige
+        Kontrollgänge für Wohnanlagen, Geschäftsobjekte oder Ihr Haus während Ihrer Abwesenheit – ich melde
+        Schäden frühzeitig und behebe kleinere Mängel direkt.
       </p>
 
       <h2 className="font-heading text-2xl font-bold text-primary">Kehrarbeiten und Wegepflege</h2>
       <p>
-        Saubere Wege und Einfahrten werten jedes Grundstück auf. Wir übernehmen
+        Saubere Wege und Einfahrten werten jedes Grundstück auf. Ich übernehme
         Kehrarbeiten und die Pflege von Wegen, Höfen und Stellflächen –
         regelmäßig oder nach Bedarf. So empfängt Ihr Grundstück Gäste und
         Kunden stets in einem gepflegten Zustand.
       </p>
 
-      <h2 className="font-heading text-2xl font-bold text-primary">Drohnenservice</h2>
+      <h2 className="font-heading text-2xl font-bold text-primary">Dach- und Dachrinnenkontrolle per Drohne</h2>
       <p>
-        Mit unserem Drohnenservice bieten wir Ihnen eine moderne und sichere
+        Mit meiner Drohne biete ich Ihnen eine moderne und sichere
         Möglichkeit, Ihr Grundstück und Ihre Gebäude aus der Vogelperspektive
         zu inspizieren und zu dokumentieren. Ob für die private Übersicht oder
-        für Objektbetreuer – wir liefern Ihnen präzise Bilder und Videos ohne
+        für Objektbetreuer – ich liefere Ihnen präzise Bilder und Videos ohne
         Gerüste oder Leitern.
       </p>
       <ul className="space-y-3">
