@@ -13,6 +13,7 @@ const navLinks = [
 { label: "Über mich", href: "#ueber-mich" },
 { label: "Leistungen", href: "#leistungen" },
 { label: "Referenzen", href: "#projekte" },
+{ label: "Bewertungen", href: "#bewertungen" },
 { label: "Jobs", href: "/jobs" },
 { label: "Kontakt", href: "#kontakt" }];
 
