@@ -5,6 +5,7 @@ import AboutSection from "../components/home/AboutSection";
 import ServicesSection from "../components/home/ServicesSection";
 import TargetGroupsSection from "../components/home/TargetGroupsSection";
 import GallerySection from "../components/home/GallerySection";
+import ReviewsSection from "../components/home/ReviewsSection";
 import WhyUsSection from "../components/home/WhyUsSection";
 import FaqSection from "../components/home/FaqSection";
 import ContactSection from "../components/home/ContactSection";
@@ -24,6 +25,7 @@ export default function Home() {
       <ServicesSection />
       <TargetGroupsSection />
       <GallerySection />
+      <ReviewsSection />
       <WhyUsSection />
       <FaqSection />
       <ContactSection />

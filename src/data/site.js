@@ -9,6 +9,7 @@ export const OG_IMAGE = "/images/vorschau.jpg";
 export const FAVICON = "/images/favicon.png";
 export const GOOGLE_PROFILE = "https://maps.app.goo.gl/wQS4Wnj2BYfiWz7e8";
 export const GOOGLE_REVIEW = "https://g.page/r/CQBbrgcS3wrJEAE/review";
+export const MYHAMMER_PROFILE = "https://www.my-hammer.de/auftragnehmer/hausmeisterservice-sebastian-jauch";
 export const GA_ID = "G-4JZQ49X87R";
 
 export const LOCAL_BUSINESS = {
