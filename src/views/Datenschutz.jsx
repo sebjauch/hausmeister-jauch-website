@@ -225,26 +225,39 @@ export default function Datenschutz() {
         </p>
       </Section>
 
-      <Section n={11} title="Schriftarten">
+      <Section n={11} title="Kundenbewertungen">
+        <p className="mb-3">
+          Auf unserer Startseite zeigen wir Bewertungen, die Kunden öffentlich auf Google und MyHammer abgegeben haben, jeweils mit dem dort angezeigten Namen.
+        </p>
+        <p className="mb-3">
+          Die Google-Bewertungen werden von unserem Server über die Schnittstelle von Google (Google Places API, Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) abgerufen und zwischengespeichert. Dabei werden keine Daten der Besucher unserer Website an Google oder MyHammer übermittelt, und es werden keine Cookies gesetzt. Erst wenn Sie auf einen Link zu Google oder MyHammer klicken, verlassen Sie unsere Website.
+        </p>
+        <p>
+          <span className="font-heading font-semibold text-foreground block mb-1">Rechtsgrundlage</span>
+          Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Darstellung unserer öffentlichen Kundenbewertungen).
+        </p>
+      </Section>
+
+      <Section n={12} title="Schriftarten">
         <p>
           Die auf dieser Website verwendeten Schriftarten sind lokal auf unserem Server eingebunden. Beim Aufruf der Seite wird keine Verbindung zu Servern von Google oder anderen Schriftanbietern aufgebaut.
         </p>
       </Section>
 
-      <Section n={12} title="SSL- bzw. TLS-Verschlüsselung">
+      <Section n={13} title="SSL- bzw. TLS-Verschlüsselung">
         <p className="mb-3">Diese Website verwendet aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.</p>
         <p className="mb-3">Dadurch werden übermittelte Daten verschlüsselt übertragen.</p>
         <p>Eine verschlüsselte Verbindung erkennen Sie am Schloss-Symbol Ihres Browsers.</p>
       </Section>
 
-      <Section n={13} title="Speicherdauer">
+      <Section n={14} title="Speicherdauer">
         <p className="mb-3">
           Wir speichern personenbezogene Daten nur solange, wie dies zur Erfüllung der jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.
         </p>
         <p>Nach Ablauf dieser Fristen werden die Daten gelöscht.</p>
       </Section>
 
-      <Section n={14} title="Ihre Rechte">
+      <Section n={15} title="Ihre Rechte">
         <p className="mb-3">Sie haben jederzeit das Recht auf</p>
         <ul className="list-disc pl-5 space-y-1 mb-3">
           <li>Auskunft gemäß Art. 15 DSGVO</li>
@@ -257,7 +270,7 @@ export default function Datenschutz() {
         </ul>
       </Section>
 
-      <Section n={15} title="Beschwerderecht">
+      <Section n={16} title="Beschwerderecht">
         <p className="mb-3">
           Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren.
         </p>
@@ -274,14 +287,14 @@ export default function Datenschutz() {
         </p>
       </Section>
 
-      <Section n={16} title="Widerspruch gegen Werbe-E-Mails">
+      <Section n={17} title="Widerspruch gegen Werbe-E-Mails">
         <p className="mb-3">
           Der Nutzung der im Impressum veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung wird hiermit widersprochen.
         </p>
         <p>Im Falle unverlangter Zusendung von Werbung behalten wir uns rechtliche Schritte vor.</p>
       </Section>
 
-      <Section n={17} title="Änderungen dieser Datenschutzerklärung">
+      <Section n={18} title="Änderungen dieser Datenschutzerklärung">
         <p>
           Wir behalten uns vor, diese Datenschutzerklärung anzupassen, sofern dies aufgrund gesetzlicher Änderungen oder technischer Weiterentwicklungen erforderlich wird.
         </p>
