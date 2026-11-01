@@ -1,21 +1,69 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Star, Quote, ExternalLink } from "lucide-react";
 import { REVIEWS, REVIEW_SOURCES } from "@/data/reviews";
 import { GOOGLE_REVIEW } from "@/data/site";
 
-function Stars({ className = "w-4 h-4" }) {
+function Stars({ count = 5, className = "w-4 h-4" }) {
   return (
-    <div className="flex gap-0.5" aria-label="5 von 5 Sternen">
+    <div className="flex gap-0.5" aria-label={`${count} von 5 Sternen`}>
       {Array.from({ length: 5 }).map((_, i) => (
-        <Star key={i} className={`${className} fill-accent text-accent`} aria-hidden="true" />
+        <Star
+          key={i}
+          className={`${className} ${i < count ? "fill-accent text-accent" : "text-border"}`}
+          aria-hidden="true"
+        />
       ))}
     </div>
   );
 }
 
+const MAX_REVIEWS = 6;
+
+function formatRating(value) {
+  return Number(value).toFixed(1).replace(".", ",");
+}
+
+// Abwechselnd MyHammer und Google, damit beide Plattformen sichtbar sind.
+function interleave(a, b) {
+  const out = [];
+  for (let i = 0; i < Math.max(a.length, b.length); i++) {
+    if (a[i]) out.push(a[i]);
+    if (b[i]) out.push(b[i]);
+  }
+  return out;
+}
+
 export default function ReviewsSection() {
-  const total = REVIEW_SOURCES.reduce((sum, s) => sum + s.count, 0);
+  const [google, setGoogle] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/reviews")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!cancelled && data?.ok && data.count) setGoogle(data);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const sources = REVIEW_SOURCES.map((s) =>
+    s.name === "Google" && google
+      ? { ...s, rating: formatRating(google.rating), count: google.count, url: google.url || s.url }
+      : s
+  );
+  const total = sources.reduce((sum, s) => sum + s.count, 0);
+  const allFive = sources.every((s) => s.rating === "5,0");
+
+  const myHammer = REVIEWS.filter((r) => r.source === "MyHammer");
+  const googleReviews =
+    google && google.reviews?.length
+      ? google.reviews.map((r) => ({ ...r, job: null }))
+      : REVIEWS.filter((r) => r.source === "Google");
+  const reviews = interleave(myHammer, googleReviews).slice(0, MAX_REVIEWS);
 
   return (
     <section id="bewertungen" className="py-24 lg:py-32 px-6 lg:px-10">
@@ -30,13 +78,14 @@ export default function ReviewsSection() {
               Das sagen meine Kunden
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {total} Bewertungen auf Google und MyHammer, alle mit 5 von 5 Sternen.
+              {total} Bewertungen auf Google und MyHammer
+              {allFive ? ", alle mit 5 von 5 Sternen." : "."}
             </p>
           </div>
 
           {/* Plattformen */}
           <div className="grid grid-cols-2 gap-4 lg:min-w-[420px]">
-            {REVIEW_SOURCES.map((s) => (
+            {sources.map((s) => (
               <a
                 key={s.name}
                 href={s.url}
@@ -47,7 +96,7 @@ export default function ReviewsSection() {
                 <div className="font-heading font-semibold text-primary mb-2">{s.name}</div>
                 <div className="flex items-center gap-2 mb-1">
                   <span className="font-heading text-2xl font-bold text-primary">{s.rating}</span>
-                  <Stars />
+                  <Stars count={Math.round(parseFloat(String(s.rating).replace(",", ".")))} />
                 </div>
                 <div className="text-sm text-muted-foreground inline-flex items-center gap-1 group-hover:text-primary transition-colors">
                   {s.count} Bewertungen ansehen
@@ -60,9 +109,9 @@ export default function ReviewsSection() {
 
         {/* Bewertungen */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {REVIEWS.map((r, index) => (
+          {reviews.map((r, index) => (
             <motion.figure
-              key={r.author + r.source}
+              key={r.author + r.source + index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -70,14 +119,22 @@ export default function ReviewsSection() {
               className="border border-border bg-card p-8 flex flex-col"
             >
               <div className="flex items-center justify-between mb-5">
-                <Stars />
+                <Stars count={r.rating ?? 5} />
                 <Quote className="w-6 h-6 text-primary/20" aria-hidden="true" />
               </div>
               <blockquote className="text-foreground leading-relaxed flex-1">
                 „{r.text}“
               </blockquote>
               <figcaption className="mt-6 pt-5 border-t border-border text-sm">
-                <div className="font-semibold text-primary">{r.author}</div>
+                <div className="font-semibold text-primary">
+                  {r.authorUrl ? (
+                    <a href={r.authorUrl} target="_blank" rel="noopener noreferrer nofollow" className="hover:underline">
+                      {r.author}
+                    </a>
+                  ) : (
+                    r.author
+                  )}
+                </div>
                 <div className="text-muted-foreground">
                   {r.job ? `${r.job} · ` : ""}via {r.source}
                 </div>

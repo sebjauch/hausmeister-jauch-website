@@ -1,13 +1,18 @@
 // Kundenbewertungen von Google und MyHammer, als fester Text übernommen
 // (keine externen Widgets, daher keine zusätzlichen Cookies).
-// Neue Bewertung: oben in REVIEWS eintragen und die Zahlen in REVIEW_SOURCES anpassen.
+// Google: Note, Anzahl und Texte kommen automatisch über /api/reviews (worker/reviews.js);
+// die Google-Einträge hier sind nur der Ersatz, falls der Abruf nicht klappt.
+// MyHammer: die Anzahl wird wöchentlich automatisch anhand der Benachrichtigungs-Mails erhöht
+// (Zeile mit MYHAMMER_COUNT nicht umbenennen). Neue MyHammer-Texte oben in REVIEWS eintragen.
 // Namen nur als Vorname + Anfangsbuchstabe bzw. so, wie die Plattform sie zeigt.
 
 import { GOOGLE_PROFILE, MYHAMMER_PROFILE } from "./site";
 
+export const MYHAMMER_COUNT = 12;
+
 export const REVIEW_SOURCES = [
   { name: "Google", rating: "5,0", count: 4, url: GOOGLE_PROFILE },
-  { name: "MyHammer", rating: "5,0", count: 12, url: MYHAMMER_PROFILE },
+  { name: "MyHammer", rating: "5,0", count: MYHAMMER_COUNT, url: MYHAMMER_PROFILE },
 ];
 
 export const REVIEWS = [
